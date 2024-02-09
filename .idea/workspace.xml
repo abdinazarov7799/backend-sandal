@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="30631fab-b5f8-48d6-b807-f3f29c501fe2" name="Changes" comment="feat: webpack">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;abdinazarov7799&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="123fe1ac-5a7e-4af8-9b8c-ebd3c1a32747" />
+        <option name="url" value="https://github.com/abdinazarov7799/backend-sandal.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2bZhfwXFSaKEGVkRR45cw33VGD2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.index.js.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "F:/Sandal/backend-sandal",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory"
+    ],
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30631fab-b5f8-48d6-b807-f3f29c501fe2" name="Changes" comment="" />
+      <created>1706428614711</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706428614711</updated>
+      <workItem from="1706428615784" duration="7145000" />
+      <workItem from="1706528040202" duration="34894000" />
+      <workItem from="1706857779068" duration="9613000" />
+      <workItem from="1706939286684" duration="14122000" />
+      <workItem from="1707132422644" duration="5330000" />
+      <workItem from="1707305606375" duration="3419000" />
+      <workItem from="1707466933629" duration="1089000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: initial user and pagination">
+      <option name="closed" value="true" />
+      <created>1706610772287</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706610772288</updated>
+    </task>
+    <task id="LOCAL-00002" summary="edit: login response code 401 to 100">
+      <option name="closed" value="true" />
+      <created>1706611641623</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706611641623</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add: defoult user role">
+      <option name="closed" value="true" />
+      <created>1706675901915</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706675901915</updated>
+    </task>
+    <task id="LOCAL-00004" summary="database">
+      <option name="closed" value="true" />
+      <created>1706678037464</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706678037464</updated>
+    </task>
+    <task id="LOCAL-00005" summary="database">
+      <option name="closed" value="true" />
+      <created>1706678334077</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706678334077</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update package.json">
+      <option name="closed" value="true" />
+      <created>1706701843732</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706701843732</updated>
+    </task>
+    <task id="LOCAL-00007" summary="finish">
+      <option name="closed" value="true" />
+      <created>1707129038702</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707129038702</updated>
+    </task>
+    <task id="LOCAL-00008" summary="edit: order controller">
+      <option name="closed" value="true" />
+      <created>1707285498043</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707285498043</updated>
+    </task>
+    <task id="LOCAL-00009" summary=".">
+      <option name="closed" value="true" />
+      <created>1707307479596</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707307479596</updated>
+    </task>
+    <task id="LOCAL-00010" summary=".">
+      <option name="closed" value="true" />
+      <created>1707309049942</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707309049942</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: webpack">
+      <option name="closed" value="true" />
+      <created>1707467732935</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707467732935</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: initial user and pagination" />
+    <MESSAGE value="edit: login response code 401 to 100" />
+    <MESSAGE value="add: defoult user role" />
+    <MESSAGE value="database" />
+    <MESSAGE value="update package.json" />
+    <MESSAGE value="finish" />
+    <MESSAGE value="edit: order controller" />
+    <MESSAGE value="." />
+    <MESSAGE value="feat: webpack" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: webpack" />
+  </component>
+</project>

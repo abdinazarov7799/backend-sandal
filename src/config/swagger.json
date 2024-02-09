@@ -1,0 +1,116 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Mening API",
+    "version": "1.0.0",
+    "description": "Bu API tavsiflovchi ma'lumotlar bilan to'ldirilgan."
+  },
+  "paths": {
+    "/api/users": {
+      "get": {
+        "summary": "Barcha foydalanuvchilarni olish",
+        "responses": {
+          "200": {
+            "description": "Muvaffaqiyatli ro'yxat olish",
+            "content": {
+              "application/json": {
+                "example": {
+                  "users": [
+                    {"id": 1, "name": "John"},
+                    {"id": 2, "name": "Jane"}
+                  ]
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server xatosi",
+            "content": {
+              "application/json": {
+                "example": {
+                  "error": "Serverda xatolik"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Yangi foydalanuvchini qo'shish",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "example": {
+                "name": "New User"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Muvaffaqiyatli qo'shildi",
+            "content": {
+              "application/json": {
+                "example": {
+                  "id": 3,
+                  "name": "New User"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Noto'g'ri so'rov formati",
+            "content": {
+              "application/json": {
+                "example": {
+                  "error": "Noto'g'ri so'rov formati"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/categories": {
+      "get": {
+        "summary": "Barcha kategoriyalarni olish",
+        "responses": {
+          "200": {
+            "description": "Muvaffaqiyatli ro'yxat olish",
+            "content": {
+              "application/json": {
+                "example": {
+                  "categories": [
+                    {"id": 1, "name": "Category 1"},
+                    {"id": 2, "name": "Category 2"}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/products": {
+      "get": {
+        "summary": "Barcha mahsulotlarni olish",
+        "responses": {
+          "200": {
+            "description": "Muvaffaqiyatli ro'yxat olish",
+            "content": {
+              "application/json": {
+                "example": {
+                  "products": [
+                    {"id": 1, "name": "Product 1", "category": "Category 1"},
+                    {"id": 2, "name": "Product 2", "category": "Category 2"}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
