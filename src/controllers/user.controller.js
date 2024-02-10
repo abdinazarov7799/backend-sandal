@@ -1,8 +1,25 @@
 const Users = require('../models/users');
+const Branches = require('../models/branches');
 
 exports.getUsers = async (req, res) => {
     try {
-        const users = await Users.findAll();
+        const users = await Users.findAll({
+            attributes: [
+                'id',
+                'firstname',
+                'lastname',
+                'phone',
+                'login',
+                'createdAt',
+                'updatedAt'
+            ],
+            include: [
+                {
+                    model: Branches,
+                    attributes: ['name'],
+                }
+            ]
+        });
         res.json(users);
     } catch (error) {
         console.error('Error getting users:', error);

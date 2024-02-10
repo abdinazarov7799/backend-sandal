@@ -5,8 +5,9 @@ const Branches = require("../models/branches");
 const Products = require("../models/products");
 
 const botToken = '6966368726:AAFfgGkx9wX0GP8Qw5YYZK7LVhGVzMrBo6M';
-const adminChatId = 5498324176;
-const bot = new TelegramBot(botToken ,{ polling: true });
+// const adminChatId = 5498324176;
+const adminChatId = 926834986;
+const bot = new TelegramBot(botToken ,{ polling: false });
 
 exports.getOrders = async (req, res) => {
     try {
@@ -70,7 +71,7 @@ exports.createOrder = async (req, res) => {
     try {
         const data = req.body
         const user = await Users.findOne({ where: { id: data.user_id } });
-        const branch = await Branches.findOne({ where: { id: user.id } });
+        const branch = await Branches.findOne({ where: { id: user.branch_id } });
         await Orders.create({
             ...data,
             user_firstname: user.firstname,
