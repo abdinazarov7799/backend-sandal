@@ -5,8 +5,8 @@ const Branches = require("../models/branches");
 const Products = require("../models/products");
 
 const botToken = '6966368726:AAFfgGkx9wX0GP8Qw5YYZK7LVhGVzMrBo6M';
-// const adminChatId = 5498324176;
-const adminChatId = 926834986;
+const adminChatId = 5498324176;
+// const adminChatId = 926834986;
 const bot = new TelegramBot(botToken ,{ polling: false });
 
 exports.getOrders = async (req, res) => {
@@ -114,6 +114,7 @@ exports.acceptOrder = async (req, res) => {
 exports.rejectOrder = async (req, res) => {
     try {
         const orderId = req.body.id;
+        const {reject_comment} = req.body;
         const order = await Orders.findOne({ where: { id: orderId } });
         for (const item of order.items) {
             const existingItem = await Products.findByPk(item.id);
@@ -122,7 +123,11 @@ exports.rejectOrder = async (req, res) => {
                 await existingItem.save();
             }
         }
-        const updatedRowsCount = await Orders.update({ isActive: false, status: 'rejected' }, { where: { id: orderId } });
+        const updatedRowsCount = await Orders.update({
+            isActive: false,
+            status: 'rejected',
+            reject_comment,
+        }, { where: { id: orderId } });
         if (updatedRowsCount[0] === 0) {
             res.status(404).json({ error: 'Order not found' });
         } else {

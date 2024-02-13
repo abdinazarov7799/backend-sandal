@@ -17,7 +17,7 @@ const port = process.env.PORT || 7799;
 
 app.use(cors());
 
-sequelize.sync({ force: false })
+sequelize.sync({ force: true })
     .then(() => {
         updateOrCreateModels();
         console.log('Database created successfully');

@@ -17,6 +17,10 @@ const Order = sequelize.define('Order', {
         type: DataTypes.STRING,
         defaultValue: 'active',
     },
+    reject_comment: {
+        type: DataTypes.TEXT,
+        allowNull: true
+    },
     user_firstname: {
         type: DataTypes.STRING,
     },
