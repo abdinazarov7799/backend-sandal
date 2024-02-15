@@ -55,6 +55,7 @@ exports.getOrdersByUserId = async (req, res) => {
         const totalPages = Math.ceil(totalCount / size);
 
         const orders = await Orders.findAll({
+            order: [['createdAt', 'DESC']],
             where: { user_id: userId },
             offset,
             limit,
