@@ -14,6 +14,7 @@ exports.getProducts = async (req, res) => {
         });
 
         const products = await Product.findAll({
+            order: [['createdAt', 'DESC']],
             where: whereClause,
             offset,
             limit,

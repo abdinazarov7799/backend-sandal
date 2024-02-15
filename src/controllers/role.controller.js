@@ -1,5 +1,4 @@
 const Role = require('../models/roles');
-const Order = require("../models/orders");
 
 exports.getRoles = async (req, res) => {
     try {

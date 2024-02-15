@@ -11,7 +11,12 @@ exports.getCategories = async (req, res) => {
         const offset = page * pageSize;
         const limit = pageSize;
 
-        const categories = await Category.findAll({ offset, limit });
+        const categories = await Category.findAll(
+            {
+                order: [['createdAt', 'DESC']],
+                offset,
+                limit
+            });
 
         res.json({
             categories,

@@ -17,7 +17,11 @@ exports.getOrders = async (req, res) => {
         const totalCount = await Orders.count();
         const totalPages = Math.ceil(totalCount / size);
 
-        const orders = await Orders.findAll({ offset, limit });
+        const orders = await Orders.findAll({
+            order: [['createdAt', 'DESC']],
+            offset,
+            limit
+        });
 
         res.json({ orders, totalCount, totalPages });
     } catch (error) {
