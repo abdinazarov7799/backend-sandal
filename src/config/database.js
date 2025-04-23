@@ -6,6 +6,6 @@ const { Sequelize } = require('sequelize');
 //     dialect: 'postgres',
 // });
 
-const sequelize = new Sequelize('postgres://sandal:JGX0INLAjYDjqD4N32TOsAdreqXDADaC@dpg-cn1mluol5elc73d9uc30-a/sandal_fm9t');
+const sequelize = new Sequelize('postgres://sandal_6t3j_user:MdSPhPB7jXnXTqq0cCPV2p0X3bKAe5X0@dpg-d04dq1s9c44c739hrh70-a/sandal_6t3j');
 
 module.exports = sequelize;
